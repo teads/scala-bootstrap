@@ -1,6 +1,6 @@
 # scala-bootstrap
 
-This project is the support for the exercices. It can be run both in the command line and in an IDE.
+This project is the support for the exercices. It can be run both in the command line and in an IDE, but we do not recommend usage of the command line as long as you're not familiar with Scala/SBT.
 We recommend installing IntelliJ, but you can still use Scala-Eclipse IDE.
 
 ## Install
