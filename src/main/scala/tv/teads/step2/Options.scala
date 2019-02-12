@@ -1,6 +1,6 @@
-package tv.teads.tour
+package tv.teads.step2
 
-object Step_2_Options {
+object Options {
 
   /**
     * Options

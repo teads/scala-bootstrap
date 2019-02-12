@@ -1,6 +1,6 @@
-package tv.teads.tour
+package tv.teads.step3
 
-object Step_3_List {
+object Lists {
 
   val oneTwoThree = List(1, 2, 3)
 
