@@ -1,4 +1,4 @@
-package tv.teads.step1
+package tv.teads.step2
 
 object Traits {
 
