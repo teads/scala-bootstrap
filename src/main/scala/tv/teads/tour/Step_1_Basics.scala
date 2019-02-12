@@ -1,6 +1,6 @@
-package tv.teads.tour.basics
+package tv.teads.tour
 
-object Basics {
+object Step_1_Basics {
 
   /**
     * Expressions - 1
@@ -20,7 +20,7 @@ object Basics {
   private val twelve = ???
   private val one = ???
 
-  // Write an expression which is the sum of twelve and one
+  // Q1 : Write an expression which is the sum of twelve and one
   def thirteen: Int = ???
 
   /**
@@ -49,11 +49,11 @@ object Basics {
     * Methods, functions
     */
 
-  // create a method that remove 2 to its input
+  // Q2 : create a method that remove 2 to its input
 
   def remove2(input: Int): Int = ???
 
-  // create a function that remove 2 to its input
+  // Q3 : create a function that remove 2 to its input
 
   val remove2lambda: Int => Int = ???
 
@@ -68,11 +68,11 @@ object Basics {
     hashingFunction(input) + 2
   }
 
-  // Use the 2 functions above to create a function that applies the salted hash to its input
+  // Q4 : Use the 2 functions above to create a function that applies the salted hash to its input
 
   val hashAndSalt: String => Int = ???
 
-  // Use saltedHash to create a function that will always return 0 given any input String
+  // Q5 : Use saltedHash to create a function that will always return 0 given any input String
 
   val uniformHashAndSalt: String => Int = ???
 
@@ -121,9 +121,7 @@ object Basics {
   // prints nothing
 
 
-  // Exercise
-
-  // Given a player input and using a pattern match :
+  // Q6 : Given a player input and using a pattern match :
   // - return true if its name startsWith 'T'
   // - return false otherwise
 

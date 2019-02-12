@@ -1,6 +1,6 @@
-package tv.teads.tour.basics
+package tv.teads.tour
 
-object Options {
+object Step_2_Options {
 
   /**
     * Options
@@ -19,12 +19,12 @@ object Options {
 
   // Introducing Options
 
-  private def safeCreatePlayer(playerName: String): Option[Player] = playerName match {
+  private def createShortNamePlayer(playerName: String): Option[Player] = playerName match {
     case name if name.length < 8 => Some(Player(name))
     case _ => None
   }
 
-  private val nonePlayer = safeCreatePlayer("Rastapopoulos")
+  private val nonePlayer = createShortNamePlayer("Rastapopoulos")
 
   // nonePlayer.name doesn't compile because name is not a field of Option
 
@@ -40,7 +40,7 @@ object Options {
 
   nonePlayer.map(player => player.name) // Option[String] = None
 
-  private val somePlayer = safeCreatePlayer("Titi") // Some(Player("Titi"))
+  private val somePlayer = createShortNamePlayer("Titi") // Some(Player("Titi"))
 
   somePlayer.map(player => player.name) // Option[String] = Some("Titi")
 
@@ -49,7 +49,7 @@ object Options {
     */
 
   nonePlayer.foreach(println) // None
-  somePlayer.foreach(println) // Some("Titi")
+  somePlayer.foreach(println) // Some(Player("Titi"))
 
   /**
     * Option.filter
@@ -58,14 +58,21 @@ object Options {
   nonePlayer.filter(_.name.startsWith("T")) // None
 
   somePlayer.filter(_.name.startsWith("O")) // None
-  somePlayer.filter(_.name.startsWith("T")) // Some("Titi")
+  somePlayer.filter(_.name.startsWith("T")) // Some(Player("Titi"))
+
+  /**
+    * Option.getOrElse
+    */
+
+  nonePlayer.getOrElse(10) // 10
+  somePlayer.getOrElse(10) // Some(Player("Titi"))
 
 
-  // Exercise
-  // Create a function :
+  // Q1 : Create a function :
   // - Given an option of an integer
   // - removing 8 from it
   // - return its value if it is positive
+  // - return 0 otherwise
 
   def remove8AndReturnIfPositive(input: Option[Int]): Option[Int] = {
     ???
