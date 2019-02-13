@@ -1,6 +1,6 @@
-package tv.teads.tour
+package tv.teads.step4
 
-object Step_4_FinalExam {
+object FinalExam {
 
   // Q1 : Given a minimum eligible price and a list of Bidders, compute the winner of the auction
   // If there are at least two equal maximum bidders, there is no winner
